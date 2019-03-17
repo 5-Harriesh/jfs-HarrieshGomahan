@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1680d43d-12e8-4762-baca-0dd9d351a590" name="Default Changelist" comment="" />
+    <list default="true" id="1680d43d-12e8-4762-baca-0dd9d351a590" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../Angular/MakerChecker/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Angular/MakerChecker/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Angular/MakerChecker/src/app/app.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../Angular/MakerChecker/src/app/app.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Angular/MakerChecker/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Angular/MakerChecker/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Angular/MakerChecker/src/app/dashboard/dashboard.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Angular/MakerChecker/src/app/dashboard/dashboard.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Angular/MakerChecker/src/app/dashboard/layout/layout.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Angular/MakerChecker/src/app/dashboard/layout/layout.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Angular/MakerChecker/src/app/dashboard/layout/layout.component.sass" beforeDir="false" afterPath="$PROJECT_DIR$/../Angular/MakerChecker/src/app/dashboard/layout/layout.component.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

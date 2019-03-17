@@ -1,4 +1,41 @@
-<p>
-  layout works!
-  <router-outlet></router-outlet>
-</p>
+<mat-drawer-container class="example-container">
+  <mat-drawer #drawernav mode="over" closed>
+    
+      <mat-nav-list>
+          <a mat-list-item routerLink="./home" (click)="drawernav.toggle()">
+              <mat-icon>home</mat-icon> <span class="nav-caption">Home</span>
+          </a>
+          <a mat-list-item routerLink="./maker" (click)="drawernav.toggle()">
+              <mat-icon>create_new_folder</mat-icon> <span class="nav-caption">Maker Actions</span>   
+          </a>
+          <a mat-list-item routerLink="./checker" (click)="drawernav.toggle()">
+              <mat-icon>done_all</mat-icon><span class="nav-caption">Checker Actions</span>
+          </a>
+        </mat-nav-list>
+
+  </mat-drawer>
+  <mat-drawer-content>
+    <mat-toolbar color="primary" class="crm-navigation-bar">
+      <mat-toolbar-row>
+          <button mat-button (click)="drawernav.toggle()">
+            <mat-icon class="example-icon">menu</mat-icon>
+          </button>
+        <span class="example-spacer"></span>
+        <span>MakerChecker</span>
+        <span class="example-spacer"></span>
+        <span class="name"> Hi {{userName}} - {{userType}}</span>
+        <button mat-icon-button [matMenuTriggerFor]="usermenu">
+          <mat-icon class="example-icon">account_box</mat-icon>
+          <mat-menu #usermenu="matMenu">
+            <button mat-menu-item (click)="logoutBtnClick();">
+              <mat-icon>exit_to_app</mat-icon>
+              <span>LogOut</span>
+            </button>
+          </mat-menu>
+        </button>
+
+      </mat-toolbar-row>
+    </mat-toolbar>
+      <router-outlet></router-outlet>
+  </mat-drawer-content>
+</mat-drawer-container>
