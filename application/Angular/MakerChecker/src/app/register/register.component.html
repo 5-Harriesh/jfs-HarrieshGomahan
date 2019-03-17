@@ -1,0 +1,68 @@
+<mat-grid-list cols="3">
+    <mat-grid-tile></mat-grid-tile>
+
+    <!-- Writing markup for login starts -->
+    <mat-grid-tile class='login-element'>
+        <div class="login-container">
+
+            <!-- Template Header starts -->
+            <div class="login-box-header">
+                <img src="https://pbs.twimg.com/profile_images/468755164778610694/fat4MIum.png" width="70" height="80">
+            </div>
+            <!-- Template Header ends -->
+
+            <!-- Template Body starts -->
+            <div class="login-box-body">
+                <form [formGroup]="regForm">
+                    <!-- Markup for getting Username starts -->
+                    <mat-grid-list cols="9" rowHeight="75px">
+                        <mat-grid-tile [rowspan]="1" class="login-icon">
+                            <mat-icon>lock</mat-icon>
+                        </mat-grid-tile>
+                        <mat-grid-tile [colspan]="7">
+                            <mat-form-field class="justifier">
+                                <input matInput placeholder="Username" text="text" formControlName="userName">
+                            </mat-form-field>
+                        </mat-grid-tile>
+                    </mat-grid-list>
+                    <!-- Markup for getting Username ends -->
+
+                    <!-- Markup for getting Username starts -->
+                    <mat-grid-list cols="9" rowHeight="75px">
+                        <mat-grid-tile [rowspan]="1" class="login-icon">
+                            <mat-icon>lock</mat-icon>
+                        </mat-grid-tile>
+                        <mat-grid-tile [colspan]="7">
+                            <mat-form-field class="justifier">
+                                <mat-select placeholder="Maker or Checker" formControlName="userType">
+                                    <mat-option value="Maker">Maker</mat-option>
+                                    <mat-option value="Checker">Checker</mat-option>
+                                </mat-select>
+                            </mat-form-field>
+                        </mat-grid-tile>
+                    </mat-grid-list>
+                    <!-- Markup for getting Username ends -->
+
+                    <button (click)="regFinalBtnClick();" mat-raised-button class="register-button">
+                        <mat-icon>input</mat-icon> Register
+                    </button>
+
+                    <div layout="row" layout-margin>
+                        <div flex>
+                            -----------------------------------------------------------------------------------------------
+                        </div>
+                    </div>
+
+                    <button (click)="bkBtnClick();" mat-raised-button class="login-button">
+                        <mat-icon>input</mat-icon> Return to Login
+                    </button>
+                </form>
+            </div>
+            <!-- Template Body ends -->
+
+        </div>
+    </mat-grid-tile>
+    <!-- Writing markup for login ends -->
+    <mat-grid-tile></mat-grid-tile>
+
+</mat-grid-list>
