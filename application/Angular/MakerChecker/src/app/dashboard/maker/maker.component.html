@@ -1,13 +1,9 @@
 <mat-toolbar class="command-bar-height">
     <mat-toolbar-row class="command-bar-height">
-      <button disabled mat-button class="command-bar-button">
+      <button routerLink="./../makerform" mat-button class="command-bar-button">
         <mat-icon class ="command-bar-icon">add</mat-icon>
         NEW
       </button>
-      <button disabled mat-button class="command-bar-button">
-          <mat-icon class ="command-bar-icon">edit</mat-icon>
-          EDIT
-        </button>
   </mat-toolbar-row>
 </mat-toolbar>
 
@@ -27,11 +23,11 @@
       </ng-container>
       <ng-container  matColumnDef="createddate">
           <mat-header-cell *matHeaderCellDef>Created Date</mat-header-cell>
-          <mat-cell *matCellDef="let applications">{{applications.createddate}}</mat-cell>
+          <mat-cell *matCellDef="let applications">{{applications.createddate | date}}</mat-cell>
       </ng-container>
       <ng-container  matColumnDef="modifieddate">
           <mat-header-cell *matHeaderCellDef>Modified Date</mat-header-cell>
-          <mat-cell *matCellDef="let applications">{{applications.modifieddate}}</mat-cell>
+          <mat-cell *matCellDef="let applications">{{applications.modifieddate | date}}</mat-cell>
       </ng-container>
       <ng-container  matColumnDef="applicationtype">
           <mat-header-cell *matHeaderCellDef>Application Type</mat-header-cell>

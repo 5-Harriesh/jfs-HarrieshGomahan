@@ -2,9 +2,10 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import {MatButtonModule, MatCheckboxModule,MatGridListModule,
-  MatInputModule,MatIconModule,MatFormFieldModule,MatSelectModule} from '@angular/material';
+  MatInputModule,MatDatepickerModule,MatNativeDateModule,MatIconModule,MatFormFieldModule,MatSelectModule} from '@angular/material';
 
-@NgModule({
+
+  @NgModule({
   declarations: [],
   imports: [
     CommonModule,
@@ -14,7 +15,9 @@ import {MatButtonModule, MatCheckboxModule,MatGridListModule,
     MatFormFieldModule,
     MatInputModule,
     MatIconModule,
-    MatSelectModule
+    MatSelectModule,
+    MatDatepickerModule,
+    MatNativeDateModule
   ],
   exports : [
     CommonModule,
@@ -24,7 +27,9 @@ import {MatButtonModule, MatCheckboxModule,MatGridListModule,
     MatFormFieldModule,
     MatInputModule,
     MatIconModule,
-    MatSelectModule
+    MatSelectModule,
+    MatDatepickerModule,
+    MatNativeDateModule
   ]
 })
 export class SharedModule { }

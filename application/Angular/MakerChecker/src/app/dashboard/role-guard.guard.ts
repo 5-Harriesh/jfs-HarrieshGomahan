@@ -14,7 +14,7 @@ export class RoleGuardGuard implements CanActivate  {
 
     if('Checker' == userType && '/dashboard/checker' == state.url ){
       return true;
-    }else if('Maker' == userType && '/dashboard/maker' == state.url ){
+    }else if('Maker' == userType && ('/dashboard/maker' == state.url || '/dashboard/makerform' ==state.url) ){
       return true;
     }else{
       alert("Access Denied");

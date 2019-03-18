@@ -22,11 +22,14 @@ import {MatCardModule} from '@angular/material/card';
 import { RoleGuardGuard } from './role-guard.guard';
 
 import {MatTableModule} from '@angular/material/table';
+import { MakerformComponent } from './makerform/makerform.component';
+import { MatInputModule, MatButtonModule, MatSelectModule, MatRadioModule } from '@angular/material';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 
 @NgModule({
-  declarations: [LayoutComponent, HomeComponent, CheckerComponent, MakerComponent],
+  declarations: [LayoutComponent, HomeComponent, CheckerComponent, MakerComponent, MakerformComponent],
   imports: [
     CommonModule,
     MatToolbarModule,
@@ -36,7 +39,12 @@ import {MatTableModule} from '@angular/material/table';
     MatListModule,
     MatCardModule,
     MatTableModule,
-    RouterModule.forChild(dashboardRoutes)
+    RouterModule.forChild(dashboardRoutes),
+    MatInputModule,
+    MatButtonModule,
+    MatSelectModule,
+    MatRadioModule,
+    ReactiveFormsModule
   ],
   providers : [RoleGuardGuard]
 })
