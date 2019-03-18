@@ -14,7 +14,6 @@ import java.util.HashMap;
 import java.util.NoSuchElementException;
 
 @RestController
-@CrossOrigin
 @RequestMapping("customerForm")
 public class CustomerFormController {
 
@@ -23,7 +22,7 @@ public class CustomerFormController {
     @Autowired
     FormService formService;
 
-    @GetMapping(value = "/getForms")
+    @PostMapping(value = "/getForms")
     public Object getAllForms(@RequestBody DatatableRequest datatableRequest) {
         log.info("inside getAllForms()");
         return new JSendResponse(JSendResponse.STATUS_SUCCESS, formService.getAllApplications(datatableRequest), "");

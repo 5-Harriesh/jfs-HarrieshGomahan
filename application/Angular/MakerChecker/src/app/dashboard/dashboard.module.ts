@@ -21,6 +21,7 @@ import { MakerComponent } from './maker/maker.component';
 import {MatCardModule} from '@angular/material/card';
 import { RoleGuardGuard } from './role-guard.guard';
 
+import {MatTableModule} from '@angular/material/table';
 
 
 
@@ -34,6 +35,7 @@ import { RoleGuardGuard } from './role-guard.guard';
     MatSidenavModule,
     MatListModule,
     MatCardModule,
+    MatTableModule,
     RouterModule.forChild(dashboardRoutes)
   ],
   providers : [RoleGuardGuard]

@@ -1,3 +1,48 @@
-<p>
-  maker works!
-</p>
+<mat-toolbar class="command-bar-height">
+    <mat-toolbar-row class="command-bar-height">
+      <button disabled mat-button class="command-bar-button">
+        <mat-icon class ="command-bar-icon">add</mat-icon>
+        NEW
+      </button>
+      <button disabled mat-button class="command-bar-button">
+          <mat-icon class ="command-bar-icon">edit</mat-icon>
+          EDIT
+        </button>
+  </mat-toolbar-row>
+</mat-toolbar>
+
+<mat-card>
+  <mat-table [dataSource]="dataSource">
+      <ng-container  matColumnDef="customerid">
+          <mat-header-cell *matHeaderCellDef>Customer Id</mat-header-cell>
+          <mat-cell *matCellDef="let applications">{{applications.customerid}}</mat-cell>
+      </ng-container>
+      <ng-container  matColumnDef="name">
+          <mat-header-cell *matHeaderCellDef>Name</mat-header-cell>
+          <mat-cell *matCellDef="let applications">{{applications.name}}</mat-cell>
+      </ng-container>
+      <ng-container  matColumnDef="emailid">
+          <mat-header-cell *matHeaderCellDef>Email Id</mat-header-cell>
+          <mat-cell *matCellDef="let applications">{{applications.emailid}}</mat-cell>
+      </ng-container>
+      <ng-container  matColumnDef="createddate">
+          <mat-header-cell *matHeaderCellDef>Created Date</mat-header-cell>
+          <mat-cell *matCellDef="let applications">{{applications.createddate}}</mat-cell>
+      </ng-container>
+      <ng-container  matColumnDef="modifieddate">
+          <mat-header-cell *matHeaderCellDef>Modified Date</mat-header-cell>
+          <mat-cell *matCellDef="let applications">{{applications.modifieddate}}</mat-cell>
+      </ng-container>
+      <ng-container  matColumnDef="applicationtype">
+          <mat-header-cell *matHeaderCellDef>Application Type</mat-header-cell>
+          <mat-cell *matCellDef="let applications">{{applications.applicationtype}}</mat-cell>
+      </ng-container>
+      <ng-container  matColumnDef="status">
+          <mat-header-cell *matHeaderCellDef>Status</mat-header-cell>
+          <mat-cell *matCellDef="let applications">{{applications.status}}</mat-cell>
+      </ng-container>
+      <mat-header-row *matHeaderRowDef="tableColumns"></mat-header-row>
+      <mat-row *matRowDef="let row; columns: tableColumns"></mat-row>
+  </mat-table>
+</mat-card>
+

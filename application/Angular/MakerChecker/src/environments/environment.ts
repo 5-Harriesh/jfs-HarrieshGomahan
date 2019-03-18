@@ -4,7 +4,8 @@
 
 export const environment = {
   production: false,
-  nodeApiUrl: 'http://localhost:8081/'
+  nodeApiUrl: 'http://localhost:8081/',
+  springAPiUrl : 'http://localhost:9090/'
 };
 
 /*

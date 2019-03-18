@@ -75,7 +75,7 @@ public class DatatableBuilder<T> {
             String key = filter.getKey();
             String value = filter.getValue().getValue();
             String mode = filter.getValue().getMatchMode();
-            if ((key != null) && (value != null)) {
+            if ((key != null && !key.isEmpty()) && (value != null && !value.isEmpty())) {
                 if (value.contains("%")) {
                     predicates.add(criteriaBuilder.like(userRoot.get(key), value));
                 } else {

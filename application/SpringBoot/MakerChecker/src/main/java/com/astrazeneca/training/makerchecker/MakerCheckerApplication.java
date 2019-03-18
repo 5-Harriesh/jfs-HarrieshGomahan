@@ -12,8 +12,8 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 public class MakerCheckerApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(MakerCheckerApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(MakerCheckerApplication.class, args);
+    }
 
 }
